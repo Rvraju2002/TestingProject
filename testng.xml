@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="BaseCode.Listeners"/>
+</listeners>
+
+  <test thread-count="5" name="Endtoend">
+    <classes>
+      <class name="mainCode.EndToEnd"/>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="linksvalidate">
+    <classes>
+      <class name="mainCode.ValidateLinks"/>
+    </classes>
+  </test> 
+  
+  <test thread-count="5" name="InteraceTesting">
+    <classes>
+      <class name="mainCode.UITesting"/>
+    </classes>
+  </test> 
+  
+   <test thread-count="5" name="ValidateRegisterPage">
+    <classes>
+      <class name="mainCode.ValidateRegisterationPage"/>
+    </classes>
+  </test> 
+  
+  <test thread-count="5" name="validateLoginpage">
+    <classes>
+      <class name="mainCode.ValidateLoginPage"/>
+    </classes>
+  </test> 
+  
+</suite> <!-- Suite -->
